@@ -113,10 +113,10 @@ public class MainActivity extends AppCompatActivity {
         return bRst;
     }
 
-    public void HomeWebView()
+    public Boolean HomeWebView()
     {
         m_textUri.setText(m_strUri);
-        ShowWebView(m_strUri);
+        return ShowWebView(m_strUri);
     }
 
     public Boolean ShowWebView(String _strUri)
