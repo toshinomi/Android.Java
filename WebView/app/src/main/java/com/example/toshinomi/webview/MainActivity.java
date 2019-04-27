@@ -8,12 +8,10 @@ import android.widget.Button;
 import android.webkit.WebView;
 import android.widget.EditText;
 
-import java.io.IOException;
-
 public class MainActivity extends AppCompatActivity {
 
     final private String m_strUri = "https://www.google.com/";
-    //final private String m_strUri = "";
+
     private Button m_btnBack;
     private Button m_btnForward;
     private Button m_btnReload;
@@ -67,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        m_webView = (WebView)findViewById(R.id.webView1);
+        m_webView = (WebView)findViewById(R.id.webView);
     }
 
     public Boolean BackWebView()

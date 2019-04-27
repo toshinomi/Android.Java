@@ -37,10 +37,11 @@
         android:inputType="text"
         android:layout_height="wrap_content" 
         android:layout_marginLeft="160.0dp"/>
+
     <android.webkit.WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webView1"
         android:layout_marginTop="50.0dp" />
 
 </RelativeLayout>
