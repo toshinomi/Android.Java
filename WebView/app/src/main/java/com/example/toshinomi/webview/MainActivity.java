@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent e) {
                 if((e.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    m_webView.loadUrl(m_textUri.getText().toString());
+                    ShowWebView(m_textUri.getText().toString());
                 }
 
                 return true;
@@ -113,11 +113,10 @@ public class MainActivity extends AppCompatActivity {
         return bRst;
     }
 
-    public Boolean HomeWebView()
+    public void HomeWebView()
     {
         m_textUri.setText(m_strUri);
-        String strUri = m_strUri;
-        return ShowWebView(strUri);
+        ShowWebView(m_strUri);
     }
 
     public Boolean ShowWebView(String _strUri)
@@ -125,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
         Boolean bRst = true;
         try
         {
-            m_webView.loadUrl(_strUri.toString());
-            m_textUri.setText(_strUri.toString());
+            m_webView.loadUrl(_strUri);
+            m_textUri.setText(_strUri);
         }
         catch (Exception e)
         {
