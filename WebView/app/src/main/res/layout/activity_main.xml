@@ -30,13 +30,14 @@
         android:minHeight="25px"
         android:id="@+id/buttonReload"
         android:layout_marginLeft="80.0dp" />
+
     <EditText
-        android:id="@+id/edittextUri"
+        android:id="@+id/editTextUri"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160.0dp"
         android:imeOptions="actionGo"
-        android:inputType="text"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="160.0dp"/>
+        android:inputType="text" />
 
     <android.webkit.WebView
         android:id="@+id/webView"

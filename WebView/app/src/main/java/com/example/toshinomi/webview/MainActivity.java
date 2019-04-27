@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        m_textUri = findViewById(R.id.edittextUri);
+        m_textUri = findViewById(R.id.editTextUri);
         m_textUri.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent e) {
